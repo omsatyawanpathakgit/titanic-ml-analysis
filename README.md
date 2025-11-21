@@ -57,7 +57,11 @@ titanic-ml-project/
         - this column would also not be useful for ML related tasks.
 
 - **Feature Engineering**:
-  - Categorical features (Sex, Embarked) encoded using one-hot encoding or label encoding.
+  - These features are encoded so that we can easily apply machine-learning on it.
+     a- sex
+     b- embarkation-point
+  - These new features are created out of the following:
+     a- number of family members created from summing up no. of siblings , no. of spouse (aks SibSp)  and no. of parents (And/or) children (aka Parch).
   - Dropped irrelevant columns like PassengerId, Name, Ticket.
 
 
